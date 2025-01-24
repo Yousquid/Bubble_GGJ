@@ -7,15 +7,32 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Paragraph paragraph;
     public TextMeshProUGUI textMeshPro;
+    public int progress;
+    public GameObject thisObject;
 
     public void TriggeDialogue()
     { 
         FindObjectOfType<DialogueManager>().PlayDialogue(paragraph, textMeshPro);
     }
 
+    private void Start()
+    {
+        thisObject = this.gameObject;
+    }
+
     private void Update()
     {
-        buttonClickDetection();
+        progress = FindObjectOfType<DialogueManager>().progress;
+
+        if (progress == 0)
+        {
+            TriggeDialogue();
+            FindObjectOfType<DialogueManager>().isTalkingBar = true;
+            FindObjectOfType<DialogueManager>().isObjectIllustration = false;
+        }
+
+        //FindObjectOfType<DialogueManager>().EndTextBar(paragraph,thisObject);
+
     }
 
     void buttonClickDetection()
@@ -33,4 +50,6 @@ public class DialogueTrigger : MonoBehaviour
         }
       
     }
+
+
 }
