@@ -13,6 +13,7 @@ public class DialogueTrigger : MonoBehaviour
     public void TriggeDialogue()
     { 
         FindObjectOfType<DialogueManager>().PlayDialogue(paragraph, textMeshPro);
+        
     }
 
     private void Start()
@@ -34,6 +35,8 @@ public class DialogueTrigger : MonoBehaviour
         //FindObjectOfType<DialogueManager>().EndTextBar(paragraph,thisObject);
 
     }
+
+   
 
     void buttonClickDetection()
     {

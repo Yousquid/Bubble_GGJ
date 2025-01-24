@@ -14,9 +14,11 @@ public class DialogueManager : MonoBehaviour
     public GameObject objectIllustrationBox;
     public TextMeshProUGUI talkingBoxText;
     public TextMeshProUGUI objectIllustrationBoxText;
+    public List<GameObject> objects;
 
     void Start()
     {
+        isTalkingBar = true;
         paragraphs = new Queue<string>();
         progress = 0;
     }
@@ -31,12 +33,19 @@ public class DialogueManager : MonoBehaviour
 
         HideTextBox();
 
+        SceneOneChange();
+
         print("progress: " + progress);
         print("para.count: " + paragraphs.Count);
+
     }
 
     public void PlayDialogue(Paragraph paragraph , TextMeshProUGUI textMesh)
-    { 
+    {
+        isTalkingBar = true;
+
+        talkingBox.SetActive(true);
+
         paragraphs.Clear();
 
         dialogueText = textMesh;
@@ -74,7 +83,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        if (isTalkingBar)
+        if (isTalkingBar && progress != 0)
         {
             talkingBox.SetActive(false);
             talkingBoxText.text = "";
@@ -99,6 +108,17 @@ public class DialogueManager : MonoBehaviour
         {
             objectIllustrationBox.SetActive(false);
             objectIllustrationBoxText.text = "";
+        }
+    }
+
+    public void SceneOneChange()
+    {
+        if (progress == 6)
+        {
+            foreach (GameObject gameobject in objects)
+            {
+                gameobject.gameObject.SetActive(true);
+            }
         }
     }
 }
