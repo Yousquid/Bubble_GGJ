@@ -6,7 +6,7 @@ public class DraggableButton : MonoBehaviour, IDragHandler, IBeginDragHandler, I
     private RectTransform rectTransform;
     private Canvas parentCanvas;
     public RectTransform[] otherButtons; // List of other buttons to check overlap against
-
+    public string objectName;
     // You can optionally add this if you want to constrain the dragging within a certain area
     // public RectTransform dragArea;
 
@@ -56,7 +56,9 @@ public class DraggableButton : MonoBehaviour, IDragHandler, IBeginDragHandler, I
         {
             if (IsOverlapping(rectTransform, otherButton))
             {
-                print("11111");
+                GameObject thisButtonGameobject = this.transform.GetChild(0).gameObject;
+                DialogueTrigger thisButtonTrigger = thisButtonGameobject.GetComponent<DialogueTrigger>();
+                thisButtonTrigger.TriggeDialogue();
             }
         }
     }

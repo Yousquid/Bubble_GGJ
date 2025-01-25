@@ -104,11 +104,7 @@ public class DialogueManager : MonoBehaviour
             talkingBox.SetActive(false);
             talkingBoxText.text = "";
         }
-        if (!isObjectIllustration)
-        {
-            objectIllustrationBox.SetActive(false);
-            objectIllustrationBoxText.text = "";
-        }
+        
     }
 
     public void SceneOneChange()
