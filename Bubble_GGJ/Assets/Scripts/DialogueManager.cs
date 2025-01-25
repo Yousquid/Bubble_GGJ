@@ -35,8 +35,8 @@ public class DialogueManager : MonoBehaviour
 
         SceneOneChange();
 
-        print("progress: " + progress);
-        print("para.count: " + paragraphs.Count);
+       // print("progress: " + progress);
+      //  print("para.count: " + paragraphs.Count);
 
     }
 

@@ -5,6 +5,7 @@ public class DraggableButton : MonoBehaviour, IDragHandler, IBeginDragHandler, I
 {
     private RectTransform rectTransform;
     private Canvas parentCanvas;
+    public RectTransform[] otherButtons; // List of other buttons to check overlap against
 
     // You can optionally add this if you want to constrain the dragging within a certain area
     // public RectTransform dragArea;
@@ -50,5 +51,29 @@ public class DraggableButton : MonoBehaviour, IDragHandler, IBeginDragHandler, I
     {
         // Optional: Do something when dragging ends (e.g., reset appearance)
         Debug.Log("Drag Ended");
+
+        foreach (var otherButton in otherButtons)
+        {
+            if (IsOverlapping(rectTransform, otherButton))
+            {
+                print("11111");
+            }
+        }
+    }
+
+    private bool IsOverlapping(RectTransform rect1, RectTransform rect2)
+    {
+        // Get the world corners of both RectTransforms
+        Vector3[] corners1 = new Vector3[4];
+        Vector3[] corners2 = new Vector3[4];
+        rect1.GetWorldCorners(corners1);
+        rect2.GetWorldCorners(corners2);
+
+        // Create Rects using the bottom-left corner and size
+        Rect rectA = new Rect(corners1[0].x, corners1[0].y, corners1[2].x - corners1[0].x, corners1[2].y - corners1[0].y);
+        Rect rectB = new Rect(corners2[0].x, corners2[0].y, corners2[2].x - corners2[0].x, corners2[2].y - corners2[0].y);
+
+        // Check if the Rects overlap
+        return rectA.Overlaps(rectB);
     }
 }
