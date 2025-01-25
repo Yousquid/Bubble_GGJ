@@ -7,6 +7,8 @@ public class DraggableButton : MonoBehaviour, IDragHandler, IBeginDragHandler, I
     private Canvas parentCanvas;
     public RectTransform[] otherButtons; // List of other buttons to check overlap against
     public string objectName;
+    public bool isBeingDragged;
+    private bool wasOverlapping = false;
     // You can optionally add this if you want to constrain the dragging within a certain area
     // public RectTransform dragArea;
 
@@ -19,10 +21,23 @@ public class DraggableButton : MonoBehaviour, IDragHandler, IBeginDragHandler, I
         parentCanvas = GetComponentInParent<Canvas>();
     }
 
+    void Update()
+    {
+        if (wasOverlapping && !StopOverlapping())
+        {
+            FindObjectOfType<DialogueManager>().EndDialogue();
+        }
+
+        wasOverlapping = StopOverlapping();
+
+        SceneSwitch();
+    }
+
     public void OnBeginDrag(PointerEventData eventData)
     {
         // Optional: Do something when dragging begins (e.g., highlight the button)
-        Debug.Log("Drag Started");
+        
+        isBeingDragged = true;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -50,7 +65,9 @@ public class DraggableButton : MonoBehaviour, IDragHandler, IBeginDragHandler, I
     public void OnEndDrag(PointerEventData eventData)
     {
         // Optional: Do something when dragging ends (e.g., reset appearance)
-        Debug.Log("Drag Ended");
+        
+
+        isBeingDragged = false;
 
         foreach (var otherButton in otherButtons)
         {
@@ -59,10 +76,32 @@ public class DraggableButton : MonoBehaviour, IDragHandler, IBeginDragHandler, I
                 GameObject thisButtonGameobject = this.transform.GetChild(0).gameObject;
                 DialogueTrigger thisButtonTrigger = thisButtonGameobject.GetComponent<DialogueTrigger>();
                 thisButtonTrigger.TriggeDialogue();
+
+                if (this.objectName == "extra_work")
+                {
+                    FindObjectOfType<DialogueManager>().isSwitchScene = true;
+                }
             }
         }
     }
 
+    public void SceneSwitch()
+    {
+        if (StopOverlapping())
+        {
+            
+        }
+    }
+
+    private bool StopOverlapping()
+    {
+        foreach (var otherButton in otherButtons)
+        {
+            bool isOverlapping = IsOverlapping(rectTransform, otherButton);
+            return isOverlapping;
+        }
+        return false;
+    }
     private bool IsOverlapping(RectTransform rect1, RectTransform rect2)
     {
         // Get the world corners of both RectTransforms

@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI talkingBoxText;
     public TextMeshProUGUI objectIllustrationBoxText;
     public List<GameObject> objects;
+    public bool isSwitchScene = false;
 
     void Start()
     {
@@ -42,6 +43,8 @@ public class DialogueManager : MonoBehaviour
 
     public void PlayDialogue(Paragraph paragraph , TextMeshProUGUI textMesh)
     {
+        Cursor.lockState = CursorLockMode.Locked;
+
         isTalkingBar = true;
 
         talkingBox.SetActive(true);
@@ -83,7 +86,9 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        if (isTalkingBar && progress != 0)
+        Cursor.lockState = CursorLockMode.None;
+
+        if (isTalkingBar && progress != 0 && !isSwitchScene)
         {
             talkingBox.SetActive(false);
             talkingBoxText.text = "";
@@ -94,6 +99,10 @@ public class DialogueManager : MonoBehaviour
             objectIllustrationBox.SetActive(false);
             objectIllustrationBoxText.text = "";
             isObjectIllustration = false;
+        }
+        if (isTalkingBar && isSwitchScene)
+        {
+            print("ciallo!");
         }
     }
 

@@ -11,8 +11,21 @@ public class DialogueTrigger : MonoBehaviour
     public GameObject thisObject;
 
     public void TriggeDialogue()
-    { 
-        FindObjectOfType<DialogueManager>().PlayDialogue(paragraph, textMeshPro);
+    {
+        if (this.GetComponent<DraggableButton>() != null)
+        {
+            DraggableButton buttonScript = this.GetComponent<DraggableButton>();
+
+            if (!buttonScript.isBeingDragged)
+            {
+                FindObjectOfType<DialogueManager>().PlayDialogue(paragraph, textMeshPro);
+            }
+        }
+        else if (this.GetComponent<DraggableButton>() == null)
+        {
+            FindObjectOfType<DialogueManager>().PlayDialogue(paragraph, textMeshPro);
+        }
+        
         
     }
 
