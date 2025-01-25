@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class DialogueManager : MonoBehaviour
 {
     private Queue<string> paragraphs;
@@ -16,12 +18,22 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI objectIllustrationBoxText;
     public List<GameObject> objects;
     public bool isSwitchScene = false;
+    public GameObject sceneSwitchComic;
+    public int sceneNumber;
+    public bool hasShown = false;
+    public int prssedTime = 0;
+    public bool isKeyBoardDown = false;
 
     void Start()
     {
         isTalkingBar = true;
         paragraphs = new Queue<string>();
         progress = 0;
+
+        if (sceneNumber != 0)
+        {
+            //talkingBox.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -36,9 +48,29 @@ public class DialogueManager : MonoBehaviour
 
         SceneOneChange();
 
+        SwitchScene();
+
+        KeyBoardDetection();
+
        // print("progress: " + progress);
       //  print("para.count: " + paragraphs.Count);
 
+    }
+
+    public void KeyBoardDetection()
+    {
+        if (Input.anyKeyDown)
+        {
+            isKeyBoardDown = true;
+        }
+        foreach (KeyCode key in System.Enum.GetValues(typeof(KeyCode)))
+        {
+            if (Input.GetKeyUp(key))
+            {
+                isKeyBoardDown = false;
+                break; // Stop after detecting the first key release
+            }
+        }
     }
 
     public void PlayDialogue(Paragraph paragraph , TextMeshProUGUI textMesh)
@@ -102,7 +134,15 @@ public class DialogueManager : MonoBehaviour
         }
         if (isTalkingBar && isSwitchScene)
         {
-            print("ciallo!");
+            talkingBox.SetActive(false);
+            talkingBoxText.text = "";
+            isTalkingBar = false;
+            sceneSwitchComic.SetActive(true);
+
+            if (prssedTime >= 2)
+            {
+                SceneManager.LoadScene(sceneNumber + 1);
+            }
         }
     }
 
@@ -118,12 +158,90 @@ public class DialogueManager : MonoBehaviour
 
     public void SceneOneChange()
     {
-        if (progress == 6)
+        if (progress == 7 && sceneNumber == 1)
         {
             foreach (GameObject gameobject in objects)
             {
                 gameobject.gameObject.SetActive(true);
             }
+        }
+        if (progress == 1 && sceneNumber == 2)
+        {
+            foreach (GameObject gameobject in objects)
+            {
+                gameobject.gameObject.SetActive(true);
+            }
+        }
+        if (progress == 1 && sceneNumber == 3)
+        {
+            foreach (GameObject gameobject in objects)
+            {
+                gameobject.gameObject.SetActive(true);
+            }
+        }
+        if (progress == 1 && sceneNumber == 4)
+        {
+            foreach (GameObject gameobject in objects)
+            {
+                gameobject.gameObject.SetActive(true);
+            }
+        }
+        if (progress == 1 && sceneNumber == 5)
+        {
+            foreach (GameObject gameobject in objects)
+            {
+                gameobject.gameObject.SetActive(true);
+            }
+        }
+        if (progress == 1 && sceneNumber == 6)
+        {
+            foreach (GameObject gameobject in objects)
+            {
+                gameobject.gameObject.SetActive(true);
+            }
+        }
+        if (progress == 1 && sceneNumber == 7)
+        {
+            foreach (GameObject gameobject in objects)
+            {
+                gameobject.gameObject.SetActive(true);
+            }
+        }
+        if (progress == 1 && sceneNumber == 8)
+        {
+            foreach (GameObject gameobject in objects)
+            {
+                gameobject.gameObject.SetActive(true);
+            }
+        }
+       
+    }
+
+    public void SwitchScene()
+    {
+        if (isSwitchScene && sceneSwitchComic.activeSelf)
+        {
+            if (!hasShown)
+            {
+                prssedTime = 0;
+                hasShown = true;
+            }
+            
+            if (Input.GetKeyDown(KeyCode.DownArrow) && !isKeyBoardDown)
+            {
+                prssedTime += 1;
+               
+            }
+
+            if (prssedTime == 2)
+            {
+                DialogueTrigger sceneWordsd = sceneSwitchComic.GetComponent<DialogueTrigger>();
+                sceneWordsd.TriggeDialogue();
+                hasShown = true;
+
+            }
+
+
         }
     }
 }

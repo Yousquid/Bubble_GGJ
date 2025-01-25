@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class DialogueTrigger : MonoBehaviour
 {
     public Paragraph paragraph;
@@ -32,13 +34,16 @@ public class DialogueTrigger : MonoBehaviour
     private void Start()
     {
         thisObject = this.gameObject;
+
     }
 
     private void Update()
     {
         progress = FindObjectOfType<DialogueManager>().progress;
 
-        if (progress == 0)
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        if (progress == 0 && currentScene.name != "Start_Menu")
         {
             TriggeDialogue();
             FindObjectOfType<DialogueManager>().isTalkingBar = true;
@@ -51,21 +56,6 @@ public class DialogueTrigger : MonoBehaviour
 
    
 
-    void buttonClickDetection()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
-
-            if (hit.collider != null && hit.collider.gameObject == gameObject)
-            {
-                TriggeDialogue();
-            }
-        }
-      
-    }
 
 
 }
