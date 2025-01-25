@@ -43,7 +43,7 @@ public class DialogueTrigger : MonoBehaviour
 
         Scene currentScene = SceneManager.GetActiveScene();
 
-        if (progress == 0 && currentScene.name != "Start_Menu")
+        if (progress == 0 && currentScene.name != "MainMenu")
         {
             TriggeDialogue();
             FindObjectOfType<DialogueManager>().isTalkingBar = true;

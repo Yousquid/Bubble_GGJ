@@ -26,7 +26,12 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
-        isTalkingBar = true;
+        if (sceneNumber != 0)
+        {
+            isTalkingBar = true;
+        }
+        else isTalkingBar = false;
+
         paragraphs = new Queue<string>();
         progress = 0;
 
