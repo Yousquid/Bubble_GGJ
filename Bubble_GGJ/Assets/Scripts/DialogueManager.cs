@@ -23,6 +23,7 @@ public class DialogueManager : MonoBehaviour
     public bool hasShown = false;
     public int prssedTime = 0;
     public bool isKeyBoardDown = false;
+    public Scene_Image_Switch scene_image_switch;
 
     void Start()
     {
@@ -44,7 +45,7 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.KeypadEnter))
         {
             DisplayNextParagraph();
         }
@@ -238,24 +239,36 @@ public class DialogueManager : MonoBehaviour
     {
         if (isSwitchScene && sceneSwitchComic.activeSelf)
         {
+
             if (!hasShown)
             {
                 prssedTime = 0;
                 hasShown = true;
             }
             
-            if (Input.GetKeyDown(KeyCode.DownArrow) && !isKeyBoardDown)
+            if (Input.GetMouseButtonDown(0) && !isKeyBoardDown)
             {
                 prssedTime += 1;
                
             }
 
-            if (prssedTime == 2)
+            if (sceneNumber != 4)
             {
-                DialogueTrigger sceneWordsd = sceneSwitchComic.GetComponent<DialogueTrigger>();
-                sceneWordsd.TriggeDialogue();
-                hasShown = true;
-
+                if (prssedTime >= 3)
+                {
+                    DialogueTrigger sceneWordsd = sceneSwitchComic.GetComponent<DialogueTrigger>();
+                    sceneWordsd.TriggeDialogue();
+                    hasShown = true;
+                }
+            }
+            if (sceneNumber == 4)
+            {
+                if (prssedTime == 5)
+                {
+                    DialogueTrigger sceneWordsd = sceneSwitchComic.GetComponent<DialogueTrigger>();
+                    sceneWordsd.TriggeDialogue();
+                    hasShown = true;
+                }
             }
 
 

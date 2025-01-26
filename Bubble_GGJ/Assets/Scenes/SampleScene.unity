@@ -197,10 +197,10 @@ MonoBehaviour:
     paragraphs:
     - "\u201CWhy not? I asked myself when I was younger. Naive and full of passion,
       thinking my design would change the game industry. The truth is, every company
-      rejected my design, making me a joke. Well, that is my dream, a game designer.
-      Now I am just a nobody working like every office worker. My life slowly became
+      rejected my design, making me a joke. Well, that is my dream, a game designer. "
+    - "Now I am just a nobody working like every office worker. My life slowly became
       boring because I slowly lost myself in the world of reality. I should give
-      up my dream and embrace reality.\u201D\r\n"
+      up my dream and embrace reality.\u201D\r"
   textMeshPro: {fileID: 1605648495}
   progress: 0
   thisObject: {fileID: 0}
@@ -838,9 +838,9 @@ MonoBehaviour:
     paragraphs:
     - "\u201CHe hasn\u2019t switched on the console for half a year. The last time
       he switched it on was the Christmas party he held in his home where his family
-      and friends came. They had such a good time playing video games together that
-      night. But after the break and work restarted, he had completely forgotten
-      the console.\u201D\r\n"
+      and friends came. \r\n"
+    - "They had such a good time playing video games together that night. But after
+      the break and work restarted, he had completely forgotten the console.\u201D"
   textMeshPro: {fileID: 1605648495}
   progress: 0
   thisObject: {fileID: 0}
@@ -1088,6 +1088,7 @@ GameObject:
   - component: {fileID: 1104629895}
   - component: {fileID: 1104629894}
   - component: {fileID: 1104629896}
+  - component: {fileID: 1104629897}
   m_Layer: 5
   m_Name: Scene_Switch_Image
   m_TagString: Untagged
@@ -1134,7 +1135,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a31256e7920f9c149a4aa895c89bb609, type: 3}
+  m_Sprite: {fileID: 21300000, guid: effe59270d4433f439f601d63e8e090a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1166,10 +1167,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - SWITCH SCENE
+    - He locked away his dreams.
   textMeshPro: {fileID: 1605648495}
   progress: 0
   thisObject: {fileID: 0}
+--- !u!114 &1104629897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104629892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3648549de35e824ebc0391d6e690609, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comic_1: {fileID: 21300000, guid: effe59270d4433f439f601d63e8e090a, type: 3}
+  comic_2: {fileID: 21300000, guid: 638a36267410d974892c266c7bcf18dc, type: 3}
+  comic_3: {fileID: 21300000, guid: 6d18d83719f4fbc449d3497c69643795, type: 3}
+  comic_two_1: {fileID: 21300000, guid: b6040f20512b22843be0873b9ecb14af, type: 3}
+  comic_two_2: {fileID: 21300000, guid: 2037e80d84ba8bb41932ed5210ccfd37, type: 3}
+  comic_two_3: {fileID: 21300000, guid: 5c0ad461bb737a34eb6a557b1e3f976f, type: 3}
+  comic_two_4: {fileID: 21300000, guid: be88a4f5d05bc45479d202b8de035f91, type: 3}
+  comic_two_5: {fileID: 21300000, guid: 50edce7df35abae47994127a12f95306, type: 3}
+  comic_three_1: {fileID: 21300000, guid: 495b470203c655a4aaccddb183f49120, type: 3}
+  comic_three_2: {fileID: 21300000, guid: 83868d4059cb8f54fa6a5312a943e68f, type: 3}
+  comic_three_3: {fileID: 21300000, guid: 32c8ab9731d06304cb8f22bdf27ff2cc, type: 3}
+  image: {fileID: 0}
+  image_Number: 0
+  scene_Number: 0
 --- !u!1 &1159334246
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,7 +1248,7 @@ MonoBehaviour:
   paragraph:
     paragraphs:
     - "\u201CAh, I wish it could just be like the old time when my friends would
-      come over and we just play PS5 the whole night. I missed that.\u201D\r\n"
+      come over and we just play PS the whole night. I missed that.\u201D\r\n"
   textMeshPro: {fileID: 1605648495}
   progress: 0
   thisObject: {fileID: 0}
@@ -1297,10 +1324,10 @@ MonoBehaviour:
   paragraph:
     paragraphs:
     - "\u201CIt was years ago when he was still young. He had the dream to become
-      a game designer and designed a game he thought that was evolutionary. He went
-      to different companies to present his unique idea but none of them believed
-      in him. Now, the documents are hidden in the corner of his house, dusty and
-      forgotten.\u201D"
+      a game designer and designed a game he thought that was evolutionary.\u201D"
+    - "He went to different companies to present his unique idea but none of them
+      believed in him. Now, the documents are hidden in the corner of his house,
+      dusty and forgotten.\u201D"
   textMeshPro: {fileID: 1605648495}
   progress: 0
   thisObject: {fileID: 0}
@@ -1462,6 +1489,7 @@ MonoBehaviour:
   hasShown: 0
   prssedTime: 0
   isKeyBoardDown: 0
+  scene_image_switch: {fileID: 0}
 --- !u!1 &1391585755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1602,9 +1630,9 @@ MonoBehaviour:
   paragraph:
     paragraphs:
     - "\u201CThe pile of documents was assigned by his boss before he left work.
-      The boss said it was important and needed to finish tomorrow. It wasn\u2019t
-      the first time the boss gave him extra work after work. He already got used
-      to it.\u201D\r\n"
+      The boss said it was important and needed to finish tomorrow. \r\n"
+    - "It wasn\u2019t the first time the boss gave him extra work after work. He
+      already got used to it.\u201D"
   textMeshPro: {fileID: 1605648495}
   progress: 0
   thisObject: {fileID: 0}
@@ -1816,8 +1844,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 81b85cfc018396d49bf93b56904da530, type: 2}
+  m_sharedMaterial: {fileID: 9049393543341615253, guid: 81b85cfc018396d49bf93b56904da530, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1841,13 +1869,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535

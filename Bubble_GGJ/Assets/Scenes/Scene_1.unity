@@ -261,11 +261,12 @@ MonoBehaviour:
   - {fileID: 1220740046}
   - {fileID: 933778406}
   isSwitchScene: 0
-  sceneSwitchComic: {fileID: 366341675}
+  sceneSwitchComic: {fileID: 2096585907}
   sceneNumber: 2
   hasShown: 0
   prssedTime: 0
   isKeyBoardDown: 0
+  scene_image_switch: {fileID: 0}
 --- !u!4 &340543680
 Transform:
   m_ObjectHideFlags: 0
@@ -281,100 +282,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &366341675
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 366341676}
-  - component: {fileID: 366341679}
-  - component: {fileID: 366341678}
-  - component: {fileID: 366341677}
-  m_Layer: 5
-  m_Name: Scene_Switch_Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &366341676
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 366341675}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 514354287}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0049133, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &366341677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 366341675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69712e7aaa989e940855334a92ea6cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  paragraph:
-    paragraphs:
-    - SWITCH SCENE
-  textMeshPro: {fileID: 2053341547}
-  progress: 0
-  thisObject: {fileID: 0}
---- !u!114 &366341678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 366341675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a31256e7920f9c149a4aa895c89bb609, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &366341679
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 366341675}
-  m_CullTransparentMesh: 1
 --- !u!1 &497972331
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,8 +355,8 @@ MonoBehaviour:
     paragraphs:
     - "\u201CIt was a funny story of how he acquired the ball. He was playing soccer
       with his friends on the field when he found a ball nobody seemed to own. He
-      took the ball in the end but a player yelled at him saying it was his ball.
-      He ran away with the ball and kept it till today. His coach from high school
+      took the ball in the end but a player yelled at him saying it was his ball. "
+    - "He ran away with the ball and kept it till today. His coach from high school
       taught him that if no one saw the ball, it\u2019s yours.\u201D\r\n"
   textMeshPro: {fileID: 2053341547}
   progress: 0
@@ -646,7 +553,7 @@ RectTransform:
   - {fileID: 2142815934}
   - {fileID: 2008928025}
   - {fileID: 1220740047}
-  - {fileID: 366341676}
+  - {fileID: 2096585908}
   - {fileID: 136982656}
   - {fileID: 2053341546}
   m_Father: {fileID: 0}
@@ -1062,9 +969,10 @@ MonoBehaviour:
     - "\u201CI pretend to be alright. I still fear because of my own blues. I was
       one hell of a player, the best in my college. I used to play in the varsity
       team and was the star of our team. It was my greatest hobby, to play a game
-      of soccer. Yet now I\u2019m slowly walking away from my hobby. I fear my old
-      varsity friends will someday find out I lie to them that I still play soccer.
-      Should I admit and face my fear? If so, then I have to say goodbye to my hobby.\u201D"
+      of soccer. "
+    - "Yet now I\u2019m slowly walking away from my hobby. I fear my old varsity
+      friends will someday find out I lie to them that I still play soccer. Should
+      I admit and face my fear? If so, then I have to say goodbye to my hobby.\u201D"
   textMeshPro: {fileID: 2053341547}
   progress: 0
   thisObject: {fileID: 0}
@@ -1373,8 +1281,8 @@ MonoBehaviour:
   paragraph:
     paragraphs:
     - "\u201CThe television plays a game between Baldur FC and Skyrim FC. He was
-      a long-term fan of Baldur FC who used to skip classes to watch their games.
-      However, now he pays less attention to the team and watches fewer games from
+      a long-term fan of Baldur FC who used to skip classes to watch their games. "
+    - "However, now he pays less attention to the team and watches fewer games from
       the team. His team also relegated last season, another reason to stop watching.\u201D\r\n"
   textMeshPro: {fileID: 2053341547}
   progress: 0
@@ -1532,8 +1440,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 81b85cfc018396d49bf93b56904da530, type: 2}
+  m_sharedMaterial: {fileID: 9049393543341615253, guid: 81b85cfc018396d49bf93b56904da530, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1557,13 +1465,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1759,6 +1667,127 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2096585907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2096585908}
+  - component: {fileID: 2096585912}
+  - component: {fileID: 2096585911}
+  - component: {fileID: 2096585910}
+  - component: {fileID: 2096585909}
+  m_Layer: 5
+  m_Name: Scene_Switch_Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2096585908
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096585907}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 514354287}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0048828125, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2096585909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096585907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3648549de35e824ebc0391d6e690609, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comic_1: {fileID: 21300000, guid: effe59270d4433f439f601d63e8e090a, type: 3}
+  comic_2: {fileID: 21300000, guid: 638a36267410d974892c266c7bcf18dc, type: 3}
+  comic_3: {fileID: 21300000, guid: 6d18d83719f4fbc449d3497c69643795, type: 3}
+  comic_two_1: {fileID: 21300000, guid: b6040f20512b22843be0873b9ecb14af, type: 3}
+  comic_two_2: {fileID: 21300000, guid: 2037e80d84ba8bb41932ed5210ccfd37, type: 3}
+  comic_two_3: {fileID: 21300000, guid: 5c0ad461bb737a34eb6a557b1e3f976f, type: 3}
+  comic_two_4: {fileID: 21300000, guid: be88a4f5d05bc45479d202b8de035f91, type: 3}
+  comic_two_5: {fileID: 21300000, guid: 50edce7df35abae47994127a12f95306, type: 3}
+  comic_three_1: {fileID: 21300000, guid: 495b470203c655a4aaccddb183f49120, type: 3}
+  comic_three_2: {fileID: 21300000, guid: 83868d4059cb8f54fa6a5312a943e68f, type: 3}
+  comic_three_3: {fileID: 21300000, guid: 32c8ab9731d06304cb8f22bdf27ff2cc, type: 3}
+  image: {fileID: 0}
+  image_Number: 0
+  scene_Number: 0
+--- !u!114 &2096585910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096585907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69712e7aaa989e940855334a92ea6cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paragraph:
+    paragraphs:
+    - He locks away his hobby.
+  textMeshPro: {fileID: 2053341547}
+  progress: 0
+  thisObject: {fileID: 0}
+--- !u!114 &2096585911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096585907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: effe59270d4433f439f601d63e8e090a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2096585912
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096585907}
+  m_CullTransparentMesh: 1
 --- !u!1 &2142815933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1831,9 +1860,10 @@ MonoBehaviour:
   paragraph:
     paragraphs:
     - "\u201CHe hasn\u2019t slept well recently because of the pressure from work.
-      His muscles are sore and aching as he moves himself across the room. Even sitting
-      on a sofa doesn\u2019t help, a slight turn of his body can result in breaking
-      his bones. When is the next vacation?\u201D\r\n"
+      His muscles are sore and aching as he moves himself across the room. He needs
+      pills. "
+    - "Even sitting on a sofa doesn\u2019t help, a slight turn of his body can result
+      in breaking his bones. When is the next vacation?\u201D"
   textMeshPro: {fileID: 2053341547}
   progress: 0
   thisObject: {fileID: 0}
