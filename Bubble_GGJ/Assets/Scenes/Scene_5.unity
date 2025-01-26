@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 26490394}
   - component: {fileID: 26490393}
   m_Layer: 5
-  m_Name: Game_Designer_Bubble_One
+  m_Name: Animal_Caring_Bubble_Six
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26490391}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e587d12f3c7d366409c3b98cc92124d7, type: 3}
   m_Name: 
@@ -195,12 +195,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CWhy not? I asked myself when I was younger. Naive and full of passion,
-      thinking my design would change the game industry. The truth is, every company
-      rejected my design, making me a joke. Well, that is my dream, a game designer.
-      Now I am just a nobody working like every office worker. My life slowly became
-      boring because I slowly lost myself in the world of reality. I should give
-      up my dream and embrace reality.\u201D\r\n"
+    - "\u201CIt wasn\u2019t love and caring he felt the most at the animal shelter.
+      It was sorrow and escape. Seeing all the cute animals running around the shelter,
+      his first impression was sadness. They remind him of an angel he lost as a
+      child. At the same time, he is conflicted. He went to the shelter to escape
+      the grief. Seeing all the animals doing well, he could temporarily forget the
+      living angel. Even just for an hour.\u201D"
   textMeshPro: {fileID: 746999574}
   progress: 0
   thisObject: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: 123131431}
   - component: {fileID: 123131430}
   m_Layer: 5
-  m_Name: Evidence_Game_Design_Document
+  m_Name: Evidence_Working_License
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -369,11 +369,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CIt was years ago when he was still young. He had the dream to become
-      a game designer and designed a game he thought that was evolutionary. He went
-      to different companies to present his unique idea but none of them believed
-      in him. Now, the documents are hidden in the corner of his house, dusty and
-      forgotten.\u201D"
+    - "\u201CIt was the license of the shelter he wore every time he went there,
+      a small magnetic rectangle license.\u201D"
   textMeshPro: {fileID: 746999574}
   progress: 0
   thisObject: {fileID: 0}
@@ -522,7 +519,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paragraph:
-    paragraphs: []
+    paragraphs:
+    - "\u201CThere\u2019s a reason behind everything.\u201D"
   textMeshPro: {fileID: 746999574}
   progress: 0
   thisObject: {fileID: 0}
@@ -614,8 +612,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CCome on, kill that dream. I don\u2019t even have time to do anything
-      other than work, and my boss needs to check those documents tomorrow.\u201D"
+    - "\u201CSometimes when the person found the reason he did something, he would
+      continue to do so.\u201D"
   textMeshPro: {fileID: 746999574}
   progress: 0
   thisObject: {fileID: 0}
@@ -634,7 +632,7 @@ GameObject:
   - component: {fileID: 640503401}
   - component: {fileID: 640503400}
   m_Layer: 5
-  m_Name: Evidence_PS5
+  m_Name: Evidence_Animal_Encyclopedia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -690,11 +688,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CHe hasn\u2019t switched on the console for half a year. The last time
-      he switched it on was the Christmas party he held in his home where his family
-      and friends came. They had such a good time playing video games together that
-      night. But after the break and work restarted, he had completely forgotten
-      the console.\u201D\r\n"
+    - "\u201CHe loved reading about animals, obsessed with it. He used to soak into
+      the encyclopedia in his leisure time. His knowledge was so wise that he frightened
+      any other people at the animal shelter because he would point out anything
+      wrong at the shelter.\u201D"
   textMeshPro: {fileID: 746999574}
   progress: 0
   thisObject: {fileID: 0}
@@ -941,7 +938,7 @@ GameObject:
   - component: {fileID: 956053386}
   - component: {fileID: 956053385}
   m_Layer: 5
-  m_Name: Evidence_Extra_Work
+  m_Name: Evidence_Dog_Picture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -997,10 +994,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CThe pile of documents was assigned by his boss before he left work.
-      The boss said it was important and needed to finish tomorrow. It wasn\u2019t
-      the first time the boss gave him extra work after work. He already got used
-      to it.\u201D\r\n"
+    - "\u201CPumpkin was her name. She was a sweet angel in his childhood. There
+      were two lessons Pumpkin taught him. The first is what is love, the second
+      is what is farewell. As a dog, she helped take care of him while his parents
+      were working. She\u2019s not a human, but she did a better job than most humans.
+      However, she passed away when he was 7. He couldn\u2019t stop crying for weeks.
+      It was that time he started to care more about animals.\u201D"
   textMeshPro: {fileID: 746999574}
   progress: 0
   thisObject: {fileID: 0}
@@ -1216,8 +1215,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CI should find some time to polish this, maybe this time someone would
-      hear me out. What am I even thinking? Well, it\u2019s my dream.\u201D\r\n"
+    - "\u201CPeople don\u2019t do things just because of a piece of plastic, let
+      alone work-related license.\u201D"
   textMeshPro: {fileID: 746999574}
   progress: 0
   thisObject: {fileID: 0}
@@ -1673,8 +1672,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CAh, I wish it could just be like the old time when my friends would
-      come over and we just play PS5 the whole night. I missed that.\u201D\r\n"
+    - "\u201CLife is strange, sometimes you just don\u2019t get to do things you
+      know the best or best at.\u201D"
   textMeshPro: {fileID: 746999574}
   progress: 0
   thisObject: {fileID: 0}

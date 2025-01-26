@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 59878325}
   - component: {fileID: 59878324}
   m_Layer: 5
-  m_Name: Evidence_Extra_Work
+  m_Name: Evidence_Photo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -194,10 +194,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CThe pile of documents was assigned by his boss before he left work.
-      The boss said it was important and needed to finish tomorrow. It wasn\u2019t
-      the first time the boss gave him extra work after work. He already got used
-      to it.\u201D\r\n"
+    - "\u201CHe stands in the center of the photo, reminding him how important he
+      was in the team. It was taken after a massive victory, 5:0 against the rival
+      school. He scored a hat trick during that game, crushing the opponents. In
+      the photo, his coach and teammates all pointed at him, smiling at their hero.\u201D\r\n"
   textMeshPro: {fileID: 214879776}
   progress: 0
   thisObject: {fileID: 0}
@@ -366,11 +366,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CHe hasn\u2019t switched on the console for half a year. The last time
-      he switched it on was the Christmas party he held in his home where his family
-      and friends came. They had such a good time playing video games together that
-      night. But after the break and work restarted, he had completely forgotten
-      the console.\u201D\r\n"
+    - "\u201CThe soccer shoes had been through I lot. He had played various games
+      wearing this pair of shoes, in rain, snow, and under the sun. You can see with
+      bare eyes that the shoe is old and in bad condition. The bottom of the shoe
+      is scraped and the strings of the shoes are almost splitting in half. It could
+      be hard to play with those shoes.\u201D"
   textMeshPro: {fileID: 214879776}
   progress: 0
   thisObject: {fileID: 0}
@@ -809,8 +809,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CAh, I wish it could just be like the old time when my friends would
-      come over and we just play PS5 the whole night. I missed that.\u201D\r\n"
+    - "\u201CIt once meant a lot to him, but now it\u2019s just an old pair of shoes
+      being a decoration in the room.\u201D"
   textMeshPro: {fileID: 214879776}
   progress: 0
   thisObject: {fileID: 0}
@@ -865,7 +865,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paragraph:
-    paragraphs: []
+    paragraphs:
+    - "(It\u2019s the next day and the man walks out.)"
+    - '(Child spectra appear.)
+
+'
+    - "\u201CHe is lost, he needs help.\u201D\r\n"
+    - "\u201CNever forget your dreams, what you like, and who you love.\u201D\r\n"
+    - "\u201CI\u2019ll make things right.\u201D\r\n"
+    - "\u201CBe true to yourself.\u201D"
   textMeshPro: {fileID: 214879776}
   progress: 0
   thisObject: {fileID: 0}
@@ -990,7 +998,7 @@ GameObject:
   - component: {fileID: 895506075}
   - component: {fileID: 895506074}
   m_Layer: 5
-  m_Name: Game_Designer_Bubble_One
+  m_Name: Soccer_Bubble_five
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1022,7 +1030,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895506072}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e587d12f3c7d366409c3b98cc92124d7, type: 3}
   m_Name: 
@@ -1047,12 +1055,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CWhy not? I asked myself when I was younger. Naive and full of passion,
-      thinking my design would change the game industry. The truth is, every company
-      rejected my design, making me a joke. Well, that is my dream, a game designer.
-      Now I am just a nobody working like every office worker. My life slowly became
-      boring because I slowly lost myself in the world of reality. I should give
-      up my dream and embrace reality.\u201D\r\n"
+    - "\u201CIn truth, you miss soccer. You know your body is out of shape, but you
+      just can\u2019t get rid of the joy you felt running on the pitch. You miss
+      the ball, the pitch, and the friends. It\u2019s never soccer you liked, it
+      was the atmosphere. It was the cheering of fans, the shouting of teammates,
+      and the touch of the ball. Be yourself, don\u2019t hide in your own shadow.\u201D"
   textMeshPro: {fileID: 214879776}
   progress: 0
   thisObject: {fileID: 0}
@@ -1308,8 +1315,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CCome on, kill that dream. I don\u2019t even have time to do anything
-      other than work, and my boss needs to check those documents tomorrow.\u201D"
+    - "\u201CThere\u2019s nothing more convincing than friends. He promised his teammates
+      he would continue playing soccer after graduation. Maybe this would remind
+      him of the golden days.\u201D"
   textMeshPro: {fileID: 214879776}
   progress: 0
   thisObject: {fileID: 0}
@@ -1363,8 +1371,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CI should find some time to polish this, maybe this time someone would
-      hear me out. What am I even thinking? Well, it\u2019s my dream.\u201D\r\n"
+    - "\u201CIt\u2019s not the first time he kept working with such nice weather.
+      I doubt he would play soccer today as well.\u201D\r\n"
   textMeshPro: {fileID: 214879776}
   progress: 0
   thisObject: {fileID: 0}
@@ -1520,7 +1528,7 @@ GameObject:
   - component: {fileID: 1785087961}
   - component: {fileID: 1785087960}
   m_Layer: 5
-  m_Name: Evidence_Game_Design_Document
+  m_Name: Evidence_The_Sun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1576,11 +1584,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CIt was years ago when he was still young. He had the dream to become
-      a game designer and designed a game he thought that was evolutionary. He went
-      to different companies to present his unique idea but none of them believed
-      in him. Now, the documents are hidden in the corner of his house, dusty and
-      forgotten.\u201D"
+    - "\u201CIt\u2019s a nice day today, the sun is high and warm, a perfect day
+      for some outdoor exercises.\u201D"
   textMeshPro: {fileID: 214879776}
   progress: 0
   thisObject: {fileID: 0}

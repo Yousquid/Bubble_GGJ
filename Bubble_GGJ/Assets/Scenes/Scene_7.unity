@@ -174,7 +174,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paragraph:
-    paragraphs: []
+    paragraphs:
+    - "\u201CIt is our dream.\u201D"
   textMeshPro: {fileID: 1433581272}
   progress: 0
   thisObject: {fileID: 0}
@@ -281,19 +282,20 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94345662}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69712e7aaa989e940855334a92ea6cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CWhy not? I asked myself when I was younger. Naive and full of passion,
-      thinking my design would change the game industry. The truth is, every company
-      rejected my design, making me a joke. Well, that is my dream, a game designer.
-      Now I am just a nobody working like every office worker. My life slowly became
-      boring because I slowly lost myself in the world of reality. I should give
-      up my dream and embrace reality.\u201D\r\n"
+    - "\u201CDo you remember the first time playing a video game? Do you remember
+      the first time your parents bought you a console? The first time you play with
+      your friends? The first time you learn about game design? The excitement, the
+      joy, and the enjoyment you felt during those moments? Nothing can compare those
+      feelings. They are strong, firm, and true. Games record your childish foolishness,
+      your teenage rebellion, your adulthood courage, and your middle-age crisis.
+      Dreams can\u2019t be thrown away by a single sentence, it is eternal.\u201D"
   textMeshPro: {fileID: 1433581272}
   progress: 0
   thisObject: {fileID: 0}
@@ -500,7 +502,7 @@ GameObject:
   - component: {fileID: 310900516}
   - component: {fileID: 310900515}
   m_Layer: 5
-  m_Name: Evidence_PS5
+  m_Name: Evidence_Adult
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -540,7 +542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   otherButtons:
   - {fileID: 94345663}
-  objectName: ps5
+  objectName: extra_work
   isBeingDragged: 0
 --- !u!114 &310900516
 MonoBehaviour:
@@ -556,11 +558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CHe hasn\u2019t switched on the console for half a year. The last time
-      he switched it on was the Christmas party he held in his home where his family
-      and friends came. They had such a good time playing video games together that
-      night. But after the break and work restarted, he had completely forgotten
-      the console.\u201D\r\n"
+    - "\u201CAn adult learning game design.\u201D\r\n"
   textMeshPro: {fileID: 1433581272}
   progress: 0
   thisObject: {fileID: 0}
@@ -708,8 +706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CAh, I wish it could just be like the old time when my friends would
-      come over and we just play PS5 the whole night. I missed that.\u201D\r\n"
+    - "\u201CThe dream that a man gave all in to chase.\u201D"
   textMeshPro: {fileID: 1433581272}
   progress: 0
   thisObject: {fileID: 0}
@@ -900,8 +897,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CCome on, kill that dream. I don\u2019t even have time to do anything
-      other than work, and my boss needs to check those documents tomorrow.\u201D"
+    - "\u201CThe dream that will last eternally was rooted in him since a child.
+      \u201D"
   textMeshPro: {fileID: 1433581272}
   progress: 0
   thisObject: {fileID: 0}
@@ -1260,8 +1257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CI should find some time to polish this, maybe this time someone would
-      hear me out. What am I even thinking? Well, it\u2019s my dream.\u201D\r\n"
+    - "\u201CThe dream had secretly become the biggest hobby of his life.\u201D"
   textMeshPro: {fileID: 1433581272}
   progress: 0
   thisObject: {fileID: 0}
@@ -1348,7 +1344,7 @@ GameObject:
   - component: {fileID: 1715511887}
   - component: {fileID: 1715511886}
   m_Layer: 5
-  m_Name: Evidence_Game_Design_Document
+  m_Name: Evidence_Teenager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1388,7 +1384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   otherButtons:
   - {fileID: 94345663}
-  objectName: game_design_document
+  objectName: extra_work
   isBeingDragged: 0
 --- !u!114 &1715511887
 MonoBehaviour:
@@ -1404,11 +1400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CIt was years ago when he was still young. He had the dream to become
-      a game designer and designed a game he thought that was evolutionary. He went
-      to different companies to present his unique idea but none of them believed
-      in him. Now, the documents are hidden in the corner of his house, dusty and
-      forgotten.\u201D"
+    - "\u201CA teenager receiving a game console as his birthday present.\u201D"
   textMeshPro: {fileID: 1433581272}
   progress: 0
   thisObject: {fileID: 0}
@@ -1521,7 +1513,7 @@ GameObject:
   - component: {fileID: 2031783980}
   - component: {fileID: 2031783979}
   m_Layer: 5
-  m_Name: Evidence_Extra_Work
+  m_Name: Evidence_Child
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1577,10 +1569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paragraph:
     paragraphs:
-    - "\u201CThe pile of documents was assigned by his boss before he left work.
-      The boss said it was important and needed to finish tomorrow. It wasn\u2019t
-      the first time the boss gave him extra work after work. He already got used
-      to it.\u201D\r\n"
+    - "\u201CA child playing his first video game.\u201D"
   textMeshPro: {fileID: 1433581272}
   progress: 0
   thisObject: {fileID: 0}
