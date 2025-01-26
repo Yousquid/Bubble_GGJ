@@ -86,6 +86,11 @@ public class DialogueManager : MonoBehaviour
 
         talkingBox.SetActive(true);
 
+        RectTransform rectTransform = talkingBox.GetComponent<RectTransform>();
+        RectTransform rectTransformText = talkingBoxText.GetComponent<RectTransform>();
+        rectTransform.anchoredPosition = new Vector3(0, -411.08f, 0);
+        rectTransformText.anchoredPosition = new Vector3(0, -411.08f, 0);
+
         paragraphs.Clear();
 
         dialogueText = textMesh;
@@ -125,8 +130,12 @@ public class DialogueManager : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
 
+        RectTransform rectTransform = talkingBox.GetComponent<RectTransform>();
+        RectTransform rectTransformText = talkingBoxText.GetComponent<RectTransform>();
         if (isTalkingBar && progress != 0 && !isSwitchScene)
         {
+            rectTransform.anchoredPosition = new Vector3(0, -1000, 0);
+            rectTransformText.anchoredPosition = new Vector3(0, -1000, 0);
             talkingBox.SetActive(false);
             talkingBoxText.text = "";
             isTalkingBar = false;
@@ -139,6 +148,8 @@ public class DialogueManager : MonoBehaviour
         }
         if (isTalkingBar && isSwitchScene)
         {
+            rectTransform.anchoredPosition = new Vector3(0, -1000, 0);
+            rectTransformText.anchoredPosition = new Vector3(0, -1000, 0);
             talkingBox.SetActive(false);
             talkingBoxText.text = "";
             isTalkingBar = false;
@@ -155,6 +166,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (!isTalkingBar)
         {
+            //talkingBox.transform.position += new Vector3(0, 400, 0);
             talkingBox.SetActive(false);
             talkingBoxText.text = "";
         }
